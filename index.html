@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>Main page</title>
-	<script type="text/javascript" src="renderer.js"></script>
+	<script type="text/javascript" src="RenderInput.js"></script>
+	<script type="text/javascript" src="RenderedArticle.js"></script>
+	<script type="text/javascript" src="SelectedWord.js"></script>
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -18,14 +20,14 @@
 
 	<script type="text/javascript">
 		var mainTable = document.getElementById('main-table');
-		var articleInput = new ArticleInput(
+		var articleInput = new RenderInput(
 			{
 				text: 'Enter something to render', 
 				onRender: onRender
 			});
 
 		var renderedArticle;
-		var chosenWord = new ChosenWord();
+		var chosenWord = new SelectedWord();
 
 		mainTable.rows[0].cells[0]
 			.appendChild(articleInput.renderElement());
@@ -35,19 +37,25 @@
 		function onRender()
 		{
 			mainTable.rows[0].cells[0].innerHTML = '';
+			
 			var text = articleInput.getText();
-			renderedArticle = new RenderedArticle(
-				{
-					text: text,
-					onChoice: onChoice
-				});
+			
 			mainTable.rows[0].cells[0]
-				.appendChild(renderedArticle.renderElement());
+				.appendChild(constructRenderedArticleElement(text));
 		}
 
-		function onChoice(word)
+		function constructRenderedArticleElement(text)
 		{
-			chosenWord.setWord(word);
+			renderedArticle = new RenderedArticle({ text: text });
+			var renderedArticleElement = renderedArticle.renderElement();
+			renderedArticleElement.addEventListener('select', onWordSelect);
+
+			return renderedArticleElement;
+		}
+
+		function onWordSelect(event)
+		{
+			chosenWord.setWord(event.detail);
 		}
 	</script>
 </body>
