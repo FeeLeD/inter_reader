@@ -1,0 +1,11 @@
+C:\Users\1\Desktop\project\inter_reader\InterReader\InterReader\bin\Debug\netcoreapp2.0\InterReader.deps.json
+C:\Users\1\Desktop\project\inter_reader\InterReader\InterReader\bin\Debug\netcoreapp2.0\InterReader.runtimeconfig.json
+C:\Users\1\Desktop\project\inter_reader\InterReader\InterReader\bin\Debug\netcoreapp2.0\InterReader.runtimeconfig.dev.json
+C:\Users\1\Desktop\project\inter_reader\InterReader\InterReader\bin\Debug\netcoreapp2.0\InterReader.dll
+C:\Users\1\Desktop\project\inter_reader\InterReader\InterReader\bin\Debug\netcoreapp2.0\InterReader.pdb
+C:\Users\1\Desktop\project\inter_reader\InterReader\InterReader\obj\Debug\netcoreapp2.0\InterReader.csprojAssemblyReference.cache
+C:\Users\1\Desktop\project\inter_reader\InterReader\InterReader\obj\Debug\netcoreapp2.0\InterReader.csproj.CoreCompileInputs.cache
+C:\Users\1\Desktop\project\inter_reader\InterReader\InterReader\obj\Debug\netcoreapp2.0\InterReader.AssemblyInfoInputs.cache
+C:\Users\1\Desktop\project\inter_reader\InterReader\InterReader\obj\Debug\netcoreapp2.0\InterReader.AssemblyInfo.cs
+C:\Users\1\Desktop\project\inter_reader\InterReader\InterReader\obj\Debug\netcoreapp2.0\InterReader.dll
+C:\Users\1\Desktop\project\inter_reader\InterReader\InterReader\obj\Debug\netcoreapp2.0\InterReader.pdb
